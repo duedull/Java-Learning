@@ -1,4 +1,7 @@
-package PACKAGE_NAME;
+public class pakistani implements Pakistan{
 
-public class pakistani {
+    @Override
+    public void Kasmir_chahiye() {
+        System.out.println("hame chahiye kashmir!");
+    }
 }

@@ -1,4 +1,11 @@
-package PACKAGE_NAME;
+public class circleAbstraction extends shapeAbstraction{
+    double radius;
 
-public class circleAbstraction {
+    circleAbstraction(double radius){
+    this.radius = radius;
+    }
+
+    double area(){
+      return Math.PI * this.radius * this.radius;
+    };
 }

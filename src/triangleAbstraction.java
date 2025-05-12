@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class triangleAbstraction extends shapeAbstraction{
+    double base;
+    double height;
 
-public class triangleAbstraction {
+    triangleAbstraction(double base, double height){
+        this.base = base;
+        this.height = height;
+    }
+    double area(){
+        return 0.5 * this.base * this.height;
+    };
 }
