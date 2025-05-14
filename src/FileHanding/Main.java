@@ -1,8 +1,6 @@
 package FileHanding;
 
-import java.io.FileNotFoundException;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 ///Key Classes for File Handling
 //- File – Represents a file or directory.
@@ -30,6 +28,24 @@ public class Main {
             System.out.println("File is not found " + e);
             } catch (IOException e){
             System.out.println("could not create the file " + e);
+        }
+
+        //file reader
+        //so for this we will be combining the BufferedReader and FileReader
+
+        String readPath = "C:\\Users\\home4\\Intelli_java\\runn\\src\\FileHanding\\file1.txt";
+
+        try(BufferedReader reader = new BufferedReader(new FileReader(readPath))){
+            System.out.println("file found");
+            String Line;
+
+            while ((Line = reader.readLine()) != null){
+                System.out.println(Line);
+            }
+        } catch (FileNotFoundException e){
+            System.out.println(e);
+        } catch (IOException e){
+            System.out.println("Something went wrong");
         }
     }
 }
