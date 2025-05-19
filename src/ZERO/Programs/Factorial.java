@@ -12,5 +12,6 @@ public class Factorial {
             temp = temp * i;
         }
         System.out.printf("%d! is %d",no,temp);
+        scanner.close();
     }
 }

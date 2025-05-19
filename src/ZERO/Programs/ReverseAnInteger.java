@@ -15,5 +15,6 @@ public class ReverseAnInteger {
             no /= 10;
         }
         System.out.println(reversed);
+        scanner.close();
     }
 }

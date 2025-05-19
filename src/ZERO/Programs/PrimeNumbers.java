@@ -23,5 +23,6 @@ public class PrimeNumbers {
                 }
             }
         }
+        scanner.close();
     }
 }

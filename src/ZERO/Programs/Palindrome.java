@@ -66,6 +66,6 @@ public class Palindrome {
                 checkInteger(number);
             }
         };
-
+        scanner.close();
     }
 }

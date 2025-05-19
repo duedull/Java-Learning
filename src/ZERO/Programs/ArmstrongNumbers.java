@@ -25,5 +25,6 @@ public class ArmstrongNumbers {
         } else {
             System.out.println("No, " + no + " this is not a armstrong number");
         }
+        scanner.close();
     }
 }

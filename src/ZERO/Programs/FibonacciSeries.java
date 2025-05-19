@@ -28,5 +28,6 @@ public class FibonacciSeries {
         for (int k: No){
             System.out.printf("%d,",k);
         }
+        scanner.close();
     }
 }
