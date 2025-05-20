@@ -14,7 +14,7 @@ public class Star {
                 System.out.print("*");
             }
 
-                System.out.println("\n");
+                System.out.print("\n");
         }
     scanner.close();
     }
