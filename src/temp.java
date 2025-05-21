@@ -1,16 +1,18 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
 public class temp {
     public static void main(String[] args) {
-        cc: System.out.println("this is to be jumped on");
-        aa:
-        for (int i = 1; i <= 3; i++) {
-            bb:
-            for (int j = 1; j <= 3; j++) {
-                if (i == 2 && j == 2) {
-                    //using continue statement with label
-                    continue aa;
-                }
-                System.out.println(i + " " + j);
+        try {
+            Process process = Runtime.getRuntime().exec("wmic memorychip get Manufacturer, PartNumber, Speed");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+            String line;
+
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
             }
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 }
