@@ -10,7 +10,7 @@ public class Diamond {
         System.out.print("Enter the length of Diamond: ");
         int row = scanner.nextInt();
         System.out.println("(note: length will be 2x)");
-        for (int i = 1; i<= row; i++){
+        for (int i = 1; i< row; i++){
             //spaces
             for (int j = row; j > i; j--){
                 System.out.print(" ");
