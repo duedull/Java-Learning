@@ -1,4 +1,6 @@
 package ZERO.abstraction;
 
-public class Interface2 {
+public interface Interface2 extends Interface3 {
+
+    void inter2();
 }

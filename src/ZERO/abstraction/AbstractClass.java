@@ -1,11 +1,7 @@
 package ZERO.abstraction;
 
-public class AbstractClass {
-    public static void main(String[] args) {
-        AbstractClass2 ab = new AbstractClass2();
-
-        ab.fun1();
-        ab.fun();
-        ab.nessessory();
+public  class AbstractClass extends AbstractClass2{
+    void unnessory2(){
+        System.out.println("this is from the unnessory 2");
     }
 }
