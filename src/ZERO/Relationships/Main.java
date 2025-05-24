@@ -9,5 +9,13 @@ public class Main {
 
         //Association (Has - A) - Aggregation & Composition
 
+        Address add1 = new Address("Fa", "kerela", "000");
+        Address add2 = new Address("plo", "dtot", "001");
+
+        Employee emp1 = new Employee(123, "abhay", add1);
+        Employee emp2 = new Employee(123, "abhay", add2);
+
+        emp2.display();
+        emp1.display();
     }
 }

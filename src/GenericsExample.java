@@ -1,3 +1,18 @@
+class A{
+    A fun(){
+
+        return this;
+    }
+}
+
+class B extends A{
+
+    @Override
+    B fun(){
+
+        return this;
+    }
+}
 public class GenericsExample<T, U> {
     public T a;
     public U b;
