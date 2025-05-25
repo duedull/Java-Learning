@@ -1,6 +1,5 @@
 public class Temp {
     public static void main(String[] args) {
-        main();
         System.out.println("this is the one with string args");
     }
 
