@@ -17,4 +17,16 @@ public abstract class Person {
         this.age = age;
         this.positionInUniversity = positionInUniversity;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getPositionInUniversity() {
+        return positionInUniversity;
+    }
 }

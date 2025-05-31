@@ -3,42 +3,34 @@ package UniversityManagementSystem;
 //whole student class is made and we can store values in them by constructor all the variables are private and can be
 //accessed by only getter and setter functions
 
-public class Student {
+public class Student extends Person{
 
     //all instance variables declared private (encapsulation)
 
 //    private   String name;
+    private   String name;
     private long e_no;
-    private   int age;
+    private int age;
     private   long m_no;
     private   String email;
     private   String f_name;
     private   String m_name;
-    private   String name;
 
     private Societies society;
 
-    Student(String name, int age, long m_no, String email, String f_name, String m_name){
-
+    Student(String name, int age, long e_no, long m_no, String email, String f_name, String m_name){
+        super(name, age, "Student");
         this.m_name = m_name;
-    this.name = name;
-    this.age = age;
-    this.m_no = m_no;
-    this.email =  email;
-    this.f_name =  f_name;
+        this.e_no = e_no;
+        this.m_no = m_no;
+        this.email =  email;
+        this.f_name =  f_name;
     }
 
     //getter methods (encapsulation)
-    public String getName() {
-        return name;
-    }
 
     public long getE_no() {
         return e_no;
-    }
-
-    public int getAge() {
-        return age;
     }
 
     public long getM_no() {
